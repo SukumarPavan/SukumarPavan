@@ -8,7 +8,7 @@
 
 ### <img src="https://emoji.slack-edge.com/T0CAQPV6A/sun/9d57182266d95d86.png" width="20"> About Me
 
-- **Name:** Sukumar Pavan (call me Sunny)
+- **Name:** Sukumar Pavan
 - **Location:** India
 - **Email:** sukumarpavan2512@gmail.com
 - **Passion:** Building cool stuff with code

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview</title>
+    <style>
+        body {
+            background: black;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: monospace;
+            overflow: hidden;
+        }
+        .hexagon {
+            width: 30px;
+            height: 30px;
+            background: #000;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .circle {
+            width: 26px;
+            height: 26px;
+            background: #333;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+        }
+        .circle.glow {
+            background: #00DCFF;
+            box-shadow: 0 0 10px #00DCFF, 0 0 20px #00DCFF;
+        }
+        .circle.glow-outer {
+            background: #0088AA;
+            box-shadow: 0 0 5px #0088AA, 0 0 10px #0088AA;
+        }
+        .grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .row {
+            display: flex;
+            gap: 2px;
+        }
+        .row:nth-child(even) {
+            margin-left: 16px;
+            margin-top: -10px;
+            margin-bottom: -10px;
+            margin-right: 16px;
+        }
+        .row:nth-child(odd) {
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+        .row:first-child {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid" id="grid"></div>
+    <script>
+        const ROWS = 30;
+        const COLS = 30;
+        const GRID_RADIUS = 1; // glow radius - immediate neighbors only
+
+        function createGrid() {
+            const grid = document.getElementById('grid');
+            for (let r = 0; r < ROWS; r++) {
+                const row = document.createElement('div');
+                row.className = 'row';
+                for (let c = 0; c < COLS; c++) {
+                    const hex = document.createElement('div');
+                    hex.className = 'hexagon';
+                    hex.dataset.row = r;
+                    hex.dataset.col = c;
+                    const circle = document.createElement('div');
+                    circle.className = 'circle';
+                    circle.id = `c-${r}-${c}`;
+                    hex.appendChild(circle);
+                    hex.addEventListener('mouseenter', () => glowNeighbors(r, c));
+                    hex.addEventListener('mouseleave', clearGlow);
+                    row.appendChild(hex);
+                }
+                grid.appendChild(row);
+            }
+        }
+
+        function glowNeighbors(row, col) {
+            clearGlow();
+            // Inner layer - 8 neighbors (distance 1)
+            const inner = [
+                [-1,-1], [-1,0], [-1,1],
+                [0,-1],          [0,1],
+                [1,-1],  [1,0],  [1,1]
+            ];
+            // Outer layer - 16 neighbors (distance 2)
+            const outer = [
+                [-2,-2], [-2,-1], [-2,0], [-2,1], [-2,2],
+                [-1,-2],                  [-1,2],
+                [0,-2],                   [0,2],
+                [1,-2],                   [1,2],
+                [2,-2],  [2,-1],  [2,0],  [2,1],  [2,2]
+            ];
+            for (const [dr, dc] of inner) {
+                const nr = row + dr, nc = col + dc;
+                if (nr >= 0 && nr < ROWS && nc >= 0 && nc < COLS) {
+                    const circle = document.getElementById(`c-${nr}-${nc}`);
+                    if (circle) circle.classList.add('glow');
+                }
+            }
+            for (const [dr, dc] of outer) {
+                const nr = row + dr, nc = col + dc;
+                if (nr >= 0 && nr < ROWS && nc >= 0 && nc < COLS) {
+                    const circle = document.getElementById(`c-${nr}-${nc}`);
+                    if (circle) circle.classList.add('glow-outer');
+                }
+            }
+        }
+
+        function clearGlow() {
+            document.querySelectorAll('.circle.glow, .circle.glow-outer').forEach(c => {
+                c.classList.remove('glow', 'glow-outer');
+            });
+        }
+
+        createGrid();
+    </script>
+</body>
+</html>

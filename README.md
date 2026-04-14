@@ -14,5 +14,5 @@
 
 <h3 align="left" style="color: white;">Git-Port Preview:</h3>
 <p align="center">
-  <img src="Git-Port-final.gif" width="400" />
+  <img src="Git-Port-6.gif" width="400" />
 </p>

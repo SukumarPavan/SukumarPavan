@@ -1,6 +1,3 @@
-<table background="https://raw.githubusercontent.com/SukumarPavan/SukumarPavan/main/Git-Port-Bg.jpg" width="100%" cellpadding="20" cellspacing="0">
-<tr><td>
-
 <h1 align="center">Hi 👋, I'm S Sukumar Pavan</h1>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sukumarpavan&label=Profile%20views&color=0e75b6&style=flat" alt="sukumarpavan" /> </p>
 
@@ -17,8 +14,5 @@
 
 <h3 align="left" style="color: white;">Git-Port Preview:</h3>
 <p align="center">
-  <img src="Git-Port-4.gif" width="400" />
+  <img src="Git-Port-final.gif" width="400" />
 </p>
-
-</td></tr>
-</table>

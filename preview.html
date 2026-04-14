@@ -13,6 +13,7 @@
             align-items: center;
             font-family: monospace;
             overflow: hidden;
+            perspective: 800px;
         }
         .hexagon {
             width: 30px;
@@ -24,6 +25,11 @@
             align-items: center;
             cursor: pointer;
             overflow: hidden;
+            transform-style: preserve-3d;
+            transition: transform 0.3s ease;
+        }
+        .hexagon:hover {
+            transform: translateZ(20px) scale(1.1);
         }
         .circle {
             width: 26px;
@@ -31,14 +37,17 @@
             background: #333;
             border-radius: 50%;
             transition: all 0.2s ease;
+            transform: translateZ(10px);
         }
         .circle.glow {
             background: #00DCFF;
             box-shadow: 0 0 10px #00DCFF, 0 0 20px #00DCFF;
+            transform: translateZ(30px) scale(1.15);
         }
         .circle.glow-outer {
             background: #0088AA;
             box-shadow: 0 0 5px #0088AA, 0 0 10px #0088AA;
+            transform: translateZ(15px);
         }
         .grid {
             display: flex;

@@ -3,7 +3,7 @@
 
 <table width="100%">
 <tr>
-<td width="25%" align="left">
+<td width="40%" align="left">
 <p style="display: flex; gap: 10px; flex-wrap: wrap;">
   <a href="https://www.python.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
   <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a>
@@ -16,8 +16,8 @@
   <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/>
 </p>
 </td>
-<td width="70%" align="right">
-<img src="Git-Port-7.gif" width="400" />
+<td width="60%" align="center">
+<img src="Git-Port-7.gif" width="500" />
 </td>
 </tr>
 </table>

@@ -8,9 +8,6 @@
 <img src="Git-Port-7.gif" width="600"/>
 </p>
 
-<br/>
-<br/>
-
 <h3 align="center">🛠️ Tech Stack</h3>
 <p align="center"><img src="https://skillicons.dev/icons?i=py,blender,cpp,figma,flutter,kotlin,linux,react,tailwind&perline=9" alt="Tech Stack" /></p>
 

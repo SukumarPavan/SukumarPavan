@@ -8,13 +8,16 @@
 <img src="Git-Port-7.gif" width="600"/>
 </p>
 
+<br/>
+<br/>
+
+<h3 align="center">🛠️ Tech Stack</h3>
+<p align="center"><img src="https://skillicons.dev/icons?i=py,blender,cpp,figma,flutter,kotlin,linux,react,tailwind&perline=9" alt="Tech Stack" /></p>
+
 <p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=sukumarpavan&background=3D444D&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffffff&sideLabels=ffffff&dates=ffffff" alt="sukumarpavan" /></p>
 
 <h3 align="center">📊 GitHub Stats</h3>
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=sukumarpavan&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=00DCFF&icon_color=00DCFF&text_color=FFFFFF" alt="GitHub Stats" />
 </p>
-
-<h3 align="center">🛠️ Tech Stack</h3>
-<p align="center"><img src="https://skillicons.dev/icons?i=py,blender,cpp,figma,flutter,kotlin,linux,react,tailwind&perline=9" alt="Tech Stack" /></p>
 

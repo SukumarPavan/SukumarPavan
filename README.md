@@ -1,4 +1,4 @@
-<h1 align="center"><img src="Blinking_stars_on_202604182128 (2).gif" width="86" height="60" /> Hi 💥, I'm S Sukumar Pavan 💥 <img src="https://komarev.com/ghpvc/?username=sukumarpavan&label=Profile%20views&color=0e75b6&style=flat" alt="sukumarpavan" /> <img src="Blinking_stars_on_202604182128 (2).gif" width="86" height="60" /></h1>
+<h1 align="center"><img src="Blinking_stars_on_202604182128 (2).gif" width="86" height="60" /> Hi 💥, I'm Sukumar Pavan 💥 <img src="https://komarev.com/ghpvc/?username=sukumarpavan&label=Profile%20views&color=0e75b6&style=flat" alt="sukumarpavan" /> <img src="Blinking_stars_on_202604182128 (2).gif" width="86" height="60" /></h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00DCFF&center=true&vCenter=true&width=435&lines=Learner;Developer;Builder" alt="Typing SVG" />
